@@ -19,7 +19,6 @@
   </head>
 
   <body>
-    <form></form>
     <header class="header">
       <div class="container">
         <div class="header-items">
@@ -76,7 +75,7 @@
       <section class="section-hero">
         <div class="container hero">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <a href="#openModal" class="btn-hero">Заказать услугу</a>
+          <a href="javascript:void(0)" data-modal-open="" class="btn-hero">Заказать услугу</a>
         </div>
       </section>
 
@@ -448,13 +447,12 @@
         </div>
       </div>
     </footer>
-
-    <div id="openModal" class="modal">
+    <div data-modal="" class="modal data-modal is-hidden">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
             <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
-            <a href="#close" title="Close" class="close">
+            <a href="javascript:void(0)" title="Close" data-modal-close="" class="close">
               <svg class="modal-icon">
                 <use href="./sprite.svg#vector"></use>
               </svg>
@@ -492,11 +490,10 @@
                     <span> Соглашаюсь с рассылкой и принимаю  <a class="modal-info-link" href="">  Условия договора </a> </span>                      
                 </label>
             </div>
-            <div class="modal-btn-pos"><button type="submit" name="" class="modal-btn">Отправить</button></div>
-
-                    
+            <div class="modal-btn-pos"><button type="submit" name="" class="modal-btn">Отправить</button></div> 
           </form>
       </div>
     </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
